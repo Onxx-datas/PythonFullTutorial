@@ -89,5 +89,34 @@ print(t)
 #+-------------------------Output Variables----------------------+
 #+---------------------------------------------------------------+
 
-x = 12
-print(x)
+u = "Something seems off"
+print(u) # Just a calling variable
+
+v = "Something"
+w = "seems"
+x = "off"
+print(v, w, x) # We can call multiple variables by calling them one by one
+# In here inside of print we are seperating them by using ","
+
+y = "We"
+z = "using"
+ch = "adding"
+sh = "symbol"
+print(y + z + ch + sh) # We can call multiple variables by calling them one by one
+# But in here inside of print we are seperating them by using ","
+
+a1 = 5
+b1 = 10
+print(a1 + b1) # In mathematical way + works as a adding operator
+
+c1 = "5"
+d1 = "10"
+print(c1 + d1) # This works same as str adding to each other
+
+# e1 = 5
+# f1 = "String"
+# print(e1 + f1) Uhm... Adding str to int is impossible in Python. It won't works
+
+g1 = 5
+h1 = "Text"
+print(g1, h1) # We can use "," it won't add two vars because "," means "and"
