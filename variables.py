@@ -67,7 +67,40 @@ print(this_very_very_long_variable_name_which_is_very_annoying_to_type)
 l, m, n = "First", "Second", "Third" # Python allows assigning values to multiple variables in one line
 print(l, m, n) # Printing them
 
-x = y = z = "Orange" #
-print(x) #
-print(y) #
-print(z) #
+o = p = q = "Orange" # We can assign one value into multiple variable names in one line
+print(o)
+print(p)
+print(q)
+
+s, t = 14, 15 # Swapping values without temporary values (Without Temp Values)
+s, t = t, s # It makes swapping cleaner and avoids extra memory usage
+print(s, t)
+
+values = (16, 17, 18) # In here values were inside of tuple
+u, v, w = values # By doing this we are assigning tuple values into free variable names
+print(u, v, w)
+
+a1, *b1, c1 = [19, 20, 21, 22, 23, 24] # Assigning remaining values into a list
+print(a1, b1, c1) # Using * (Asterisk) to capturing remain values into a list 
+
+names = ["Abdulaziz", "Sardor", "Jahongir"]
+ages = [19, 20, 21]
+
+for name, age in zip(names, ages): # By zip() pairs elements from two lists/tuples
+    print(f"{name} is {age} years old") # zip() pairs name with age
+
+
+#################################### Global Variables ####################################
+
+d1 = "After seven" # We are using variable which is outside of function
+def random_function():
+    print(d1 + " here comes eight") # As we can see we are calling d1 inside of random_function()
+
+random_function() # This is for call and run the created function
+
+e1 = "Python is "
+def random_function1():
+    f1 = "C++ is "
+    print(e1, "very easy")
+random_function1()
+print(f1 + "very hard")
