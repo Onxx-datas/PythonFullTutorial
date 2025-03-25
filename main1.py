@@ -1,5 +1,11 @@
-x = 12
-print(x)
+if 10 > 5:
+    print("Ten is greater than five")
 
-y = "This is a test pushing from vscode to github repo"
-print(y, x)
+if 10 > 3:
+    print("Ten is greater than three")
+if 3 > 1:
+    print("Three is greater than 1")
+a = 7
+b = "Python is easy"
+print(a, b)
+print("Hello, Python!")
