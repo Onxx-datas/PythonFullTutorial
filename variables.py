@@ -1,0 +1,73 @@
+a = "Kevin"
+b = 19
+print(a)
+print(b)
+
+c = 4
+d = "Sally"
+print(c)
+print(d)
+
+e = str(5)
+f = int(5)
+g = float(5)
+print(e) # e will be string '5'
+print(f) # f will be integer 5
+print(g) # g will be float 5.0
+
+h = "That's Integer"
+i = 37
+j = 7.5
+print(type(h)) #String
+print(type(i)) #Integer
+print(type(j)) #Float
+
+k = "Two quote"
+# "" same as ''
+k = 'One quote'
+
+#################################### Variable Names ####################################
+
+random_var = 1 # Words can be seperated with underscore
+randomvar = 2 # No need to seperate
+_random_var = 3 # Can be started with underscore
+randomVar = 4 # Second word can start with uppercase
+RANDOMVAR = 5  # By convention, uppercase means constant, but it can still be changed.
+randomvar1 =6 # Can be ended with number
+
+# 1randomvar = 7 Incorrect because variable name cannot be started with number
+# random-var = 8 Incorrect because variable name cannot be seperated with Hyphen(Minus)
+# random var = 9 Incorrect beacuse variable name cannot be seperated with Space( )
+
+myRandomVariableName = 10 # This is Camel Case variable name
+MyRandomVariableName = 11 # This is Pascal Case variable name
+my_random_variable_name = 12 # This is Snake Case variable name
+print(random_var, randomvar, _random_var, randomVar, RANDOMVAR, randomvar1)
+
+for _ in range(5): # This is actually variable name and we can use it as a Temporary variable
+    print("Look it's working") # Developers also calls it Throwaway variable  iwhen they don't need a value
+
+# >>> 5 + 5
+# 10
+# _ Can hold the last result in shell and retrieves it to terminal
+# 10
+
+имя = "Abdulaziz" # Python ALLOWS variable names in other languages for example this is Russian means "Name"
+年齢 = 19 # All this called Unicode Varibale names and this one is Japanese means "Age"
+print(имя, 年齢) # But sometimes it's best to stick with English vaiable names for good readability
+
+# Python does not have strict rules on creating variable name that allows very long variable names
+this_very_very_long_variable_name_which_is_very_annoying_to_type = 13
+print(this_very_very_long_variable_name_which_is_very_annoying_to_type)
+# But this kind of methods are bad at practice. Best practice is creating short and descriptive variable names
+
+
+#################################### Assigning Multiple Values ####################################
+
+l, m, n = "First", "Second", "Third" # Python allows assigning values to multiple variables in one line
+print(l, m, n) # Printing them
+
+x = y = z = "Orange" #
+print(x) #
+print(y) #
+print(z) #
