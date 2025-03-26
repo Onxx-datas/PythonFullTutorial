@@ -93,14 +93,52 @@ for name, age in zip(names, ages): # By zip() pairs elements from two lists/tupl
 #################################### Global Variables ####################################
 
 d1 = "After seven" # We are using variable which is outside of function
+
 def random_function():
     print(d1 + " here comes eight") # As we can see we are calling d1 inside of random_function()
-
 random_function() # This is for call and run the created function
 
-e1 = "Python is "
-def random_function1():
-    f1 = "C++ is "
-    print(e1, "very easy")
-random_function1()
-print(f1 + "very hard")
+
+
+x = "awesome" # Creating global variable named x
+
+def myfunc(): # Creating function named myFunc
+  x = "fantastic" # Creating same named variable inside of this function
+  print("Python is " + x) # In here we using local variable which is same named as global variable
+
+myfunc() # Calling function
+
+print("Python is " + x) # But in here we are using global variable which has same name as local one
+
+
+
+e1 = "Python is " # Creating global variable
+
+def random_function1(): # Creating function with using def
+    f1 = "C++ is " # This is local variable which works only inside of function
+    print(e1, "very easy") # Using global variable e1
+random_function1() # Calling the function 
+print(e1 + "very hard") # If we call f1 variable in outside of function, It will cause Name Error
+
+
+
+sum1 = 45 # Global variable
+
+def calculate_sum(): # Creating function
+    sum2 = 45 # Local variable
+    result = sum1 + sum2 # Adding two variables and equaling them into new variable named result
+    print(result) # Printing previous created variable to see sum of two variables
+calculate_sum() # Calling the function
+
+
+
+ball = 10 # Creating global variable named ball
+
+def updating_ball(): # Creating function
+    global ball # We want to modify the existing global variable ball inside this function.
+    ball = ball + 10 # This is where we are editing global variable inside of function
+    print(ball) # Printing edited global variable to see it's value
+updating_ball() # Calling function
+
+
+
