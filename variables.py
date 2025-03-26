@@ -139,6 +139,3 @@ def updating_ball(): # Creating function
     ball = ball + 10 # This is where we are editing global variable inside of function
     print(ball) # Printing edited global variable to see it's value
 updating_ball() # Calling function
-
-
-
